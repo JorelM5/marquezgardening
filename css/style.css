@@ -50,3 +50,22 @@ nav a {
     gap: 2rem;
     padding: 2rem 5%;
 }
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
