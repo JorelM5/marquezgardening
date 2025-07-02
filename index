@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquez Gardening | Jardinería Profesional</title>
+    <meta name="description" content="Servicios de jardinería, paisajismo y mantenimiento de áreas verdes.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Marquez Gardening</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Transformamos tus espacios verdes</h2>
+            <p>Servicios profesionales de jardinería en [tu ciudad].</p>
+            <a href="contact.html" class="cta-button">¡Cotiza gratis!</a>
+        </div>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="img/poda.jpg" alt="Poda de árboles">
+                <h3>Poda y Mantenimiento</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/diseno.jpg" alt="Diseño de jardines">
+                <h3>Diseño de Jardines</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/riego.jpg" alt="Sistema de riego">
+                <h3>Sistemas de Riego</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Marquez Gardening. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
