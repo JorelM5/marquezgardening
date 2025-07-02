@@ -3,59 +3,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquez Gardening | Jardinería Profesional</title>
-    <meta name="description" content="Servicios de jardinería, paisajismo y mantenimiento de áreas verdes.">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Marquez Gardening - Expertos en Jardinería y Paisajismo | Servicios Profesionales</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Marquez Gardening ofrece servicios profesionales de jardinería y paisajismo. Mantenimiento de césped, diseño de jardines y cuidado de espacios exteriores durante todo el año.">
+    <meta name="keywords" content="jardinería, paisajismo, mantenimiento césped, diseño jardines, cuidado plantas, servicios jardinería, Marquez Gardening">
+    <meta name="author" content="Marquez Gardening">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Marquez Gardening - Expertos en Jardinería y Paisajismo">
+    <meta property="og:description" content="Servicios profesionales de jardinería para mantener tu espacio exterior hermoso y saludable todo el año.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://marquezgardening.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Marquez Gardening">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marquez Gardening - Expertos en Jardinería">
+    <meta name="twitter:description" content="Servicios profesionales de jardinería y paisajismo para espacios exteriores hermosos.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=600&fit=crop">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://marquezgardening.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2IDJMMjAgOEwyOCA4TDIyIDE0TDI0IDIyTDE2IDE4TDggMjJMMTAgMTRMNCA4TDEyIDhMMTYgMloiIGZpbGw9IiMyMjc3MzMiLz4KPHN2Zz4K">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marquez Gardening",
+        "description": "Servicios profesionales de jardinería y paisajismo para mantener espacios exteriores hermosos y saludables todo el año.",
+        "url": "https://marquezgardening.com",
+        "telephone": "+1-555-0123",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ciudad",
+            "addressRegion": "Estado",
+            "addressCountry": "País"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.7128",
+            "longitude": "-74.0060"
+        },
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-16:00",
+        "priceRange": "$$",
+        "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop",
+        "sameAs": [
+            "https://www.facebook.com/marquezgardening",
+            "https://www.instagram.com/marquezgardening"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Jardinería",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mantenimiento de Césped",
+                        "description": "Corte, fertilización y cuidado profesional del césped"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diseño de Paisajismo",
+                        "description": "Diseño y creación de jardines hermosos y funcionales"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>Marquez Gardening</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Marquez Gardening</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#sobre-nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
         <div class="hero-content">
-            <h2>Transformamos tus espacios verdes</h2>
-            <p>Servicios profesionales de jardinería en [tu ciudad].</p>
-            <a href="contact.html" class="cta-button">¡Cotiza gratis!</a>
+            <div class="hero-text">
+                <h1>Expertos en Jardinería y Paisajismo</h1>
+                <p>Transformamos tu espacio exterior en un paraíso verde. Servicios profesionales de jardinería para mantener tu jardín hermoso y saludable durante todo el año.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&auto=format" alt="Jardín hermoso diseñado por Marquez Gardening" loading="lazy">
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-award"></i>
+                <span>+10 Años de Experiencia</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <span>500+ Clientes Satisfechos</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>100% Eco-Friendly</span>
+            </div>
         </div>
     </section>
 
-    <!-- Servicios Destacados -->
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <img src="img/poda.jpg" alt="Poda de árboles">
-                <h3>Poda y Mantenimiento</h3>
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios Especializados</h2>
+                <p>Ofrecemos una gama completa de servicios de jardinería profesional para mantener tu espacio exterior en perfectas condiciones</p>
             </div>
-            <div class="service-card">
-                <img src="img/diseno.jpg" alt="Diseño de jardines">
-                <h3>Diseño de Jardines</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Mantenimiento de Césped</h3>
+                    <p>Corte profesional, fertilización, aireación y tratamiento especializado para mantener tu césped verde y saludable todo el año.</p>
+                    <ul class="service-features">
+                        <li>Corte y perfilado profesional</li>
+                        <li>Fertilización estacional</li>
+                        <li>Control de malezas</li>
+                        <li>Aireación del suelo</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Diseño de Paisajismo</h3>
+                    <p>Creamos diseños únicos y personalizados que transforman tu espacio exterior en un oasis de belleza y tranquilidad.</p>
+                    <ul class="service-features">
+                        <li>Diseño 3D personalizado</li>
+                        <li>Selección de plantas nativas</li>
+                        <li>Sistemas de irrigación</li>
+                        <li>Iluminación exterior</li>
+                    </ul>
+                    <div class="popular-badge">Más Popular</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Cuidado de Plantas y Árboles</h3>
+                    <p>Poda especializada, tratamiento de enfermedades y cuidado integral para mantener tus plantas en óptimas condiciones.</p>
+                    <ul class="service-features">
+                        <li>Poda profesional</li>
+                        <li>Tratamiento de plagas</li>
+                        <li>Fertilización específica</li>
+                        <li>Transplante y siembra</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-card">
-                <img src="img/riego.jpg" alt="Sistema de riego">
-                <h3>Sistemas de Riego</h3>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>¿Por Qué Elegir Marquez Gardening?</h2>
+                    <p class="about-intro">Con más de una década de experiencia en el sector, somos los especialistas en jardinería de confianza que transforman espacios ordinarios en jardines extraordinarios.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Expertise Profesional</h4>
+                                <p>Nuestro equipo cuenta con certificaciones especializadas en horticultura, paisajismo y manejo sustentable de jardines.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <h4>Equipamiento Profesional</h4>
+                                <p>Utilizamos herramientas y equipos de última generación para garantizar resultados de calidad superior en cada proyecto.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Compromiso Total</h4>
+                                <p>Nos comprometemos con la satisfacción del cliente, ofreciendo garantía en todos nuestros trabajos y seguimiento continuo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=800&fit=crop&auto=format" alt="Equipo profesional de Marquez Gardening trabajando" loading="lazy">
+                    <div class="experience-badge">
+                        <span class="badge-number">10+</span>
+                        <span class="badge-text">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Trabajos Destacados</h2>
+                <p>Explora algunos de nuestros proyectos más exitosos y descubre cómo podemos transformar tu espacio exterior</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop&auto=format" alt="Jardín residencial diseñado por Marquez Gardening" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Jardín Residencial Moderno</h4>
+                        <p>Diseño contemporáneo con plantas nativas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&auto=format" alt="Mantenimiento de césped profesional" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Mantenimiento de Césped</h4>
+                        <p>Césped perfecto durante todo el año</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574263867128-5eea7ae4c22f?w=400&h=300&fit=crop&auto=format" alt="Paisajismo comercial Marquez Gardening" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Paisajismo Comercial</h4>
+                        <p>Espacios verdes para empresas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&h=300&fit=crop&auto=format" alt="Jardín vertical diseñado por expertos" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Jardines Verticales</h4>
+                        <p>Soluciones innovadoras para espacios pequeños</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542272454315-7ad9b6c84c10?w=400&h=300&fit=crop&auto=format" alt="Sistema de riego automático instalado" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Sistemas de Riego</h4>
+                        <p>Tecnología avanzada para el cuidado automático</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1616595163557-8df2b7618648?w=400&h=300&fit=crop&auto=format" alt="Poda especializada de árboles" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Poda Especializada</h4>
+                        <p>Cuidado profesional de árboles y arbustos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>La satisfacción de nuestros clientes es nuestra mejor recomendación</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Marquez Gardening transformó completamente nuestro jardín. Su profesionalismo y atención al detalle son excepcionales. ¡Altamente recomendados!"</p>
+                    <div class="testimonial-author">
+                        <strong>María González</strong>
+                        <span>Propietaria Residencial</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"El mejor servicio de jardinería que he contratado. Siempre puntuales, profesionales y con resultados increíbles. Mi césped nunca se ha visto mejor."</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Cliente Comercial</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Su conocimiento en plantas y diseño es impresionante. Crearon el jardín de mis sueños respetando nuestro presupuesto. ¡Gracias Marquez Gardening!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Martínez</strong>
+                        <span>Entusiasta de la Jardinería</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para Transformar tu Jardín?</h2>
+                    <p>Contáctanos hoy mismo para una consulta gratuita y descubre cómo podemos hacer realidad el jardín de tus sueños.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@marquezgardening.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Servimos toda el área metropolitana</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lun-Vie: 8:00-18:00<br>Sáb: 8:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="Nuestro canal de YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre Completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Correo Electrónico</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Seleccionar Servicio</option>
+                                <option value="lawn-maintenance">Mantenimiento de Césped</option>
+                                <option value="landscape-design">Diseño de Paisajismo</option>
+                                <option value="plant-care">Cuidado de Plantas</option>
+                                <option value="irrigation">Sistemas de Riego</option>
+                                <option value="consultation">Consulta General</option>
+                            </select>
+                            <label for="service">Tipo de Servicio</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Cuéntanos sobre tu proyecto</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Solicitar Cotización Gratuita</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Marquez Gardening. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Marquez Gardening</span>
+                    </div>
+                    <p>Expertos en jardinería y paisajismo con más de 10 años de experiencia transformando espacios exteriores en paraísos verdes.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/marquezgardening" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Mantenimiento de Césped</a></li>
+                        <li><a href="#servicios">Diseño de Paisajismo</a></li>
+                        <li><a href="#servicios">Cuidado de Plantas</a></li>
+                        <li><a href="#servicios">Sistemas de Riego</a></li>
+                        <li><a href="#servicios">Poda Especializada</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#galeria">Galería de Trabajos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@marquezgardening.com</p>
+                        <p><i class="fas fa-clock"></i> Lun-Vie: 8:00-18:00</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Área Metropolitana</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marquez Gardening. Todos los derechos reservados. | Diseñado con ❤️ para jardines extraordinarios</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/15551234567?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20servicios%20de%20jardinería" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
